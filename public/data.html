@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack App Deployment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/8.0.9/superagent.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">Enter Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./makeUsers.html">Make Users</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">View Users</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="app" class="data-grid object-fit-fill" ></div>
+        </div>
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="data.js" type="text/babel"></script>
+</body>
+</html>

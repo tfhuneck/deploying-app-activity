@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack App Deployment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">  
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/8.0.9/superagent.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Enter Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./makeUsers.html">Make Users</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./data.html">View Users</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class='col d-flex justify-content-center'> 
+               <div class="card enter">
+                    <h4 class="card-title">Enter User Information</h4>
+                    <form class="card-text container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-1">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter your Username">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                                <h5>Contact Information</h5>
+                                <div class="mb-1">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Enter your First Name">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter your Last Name">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dob">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email address">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="phone" class="form-label">Phone number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h5>Address</h5>
+                                <div class="mb-1">
+                                    <label for="streetaddress" class="form-label">Street Address</label>
+                                    <input type="text" class="form-control" id="streetaddress" placeholder="Enter your Street Address">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="city" class="form-label">City </label>
+                                    <input type="text" class="form-control" id="city" placeholder="Enter your City">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="state" class="form-label">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="Enter your State">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="zip" class="form-label">Zipcode</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="Enter your Zipcode">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="add()">Submit</button>
+                    </form>
+               </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div id="status"></div>
+        </div>
+    </div>
+
+    <script>
+        function add() {
+
+            const username      = document.getElementById('username').value;
+            const password      = document.getElementById('password').value;
+            const firstName     = document.getElementById('firstName').value;
+            const lastName      = document.getElementById('lastName').value;
+            const name          = ` ${firstName} ${lastName}`;
+            const dob           = document.getElementById('dob').value;
+            const email         = document.getElementById('email').value;
+            const phone         = document.getElementById('phone').value;
+            const streetaddress = document.getElementById('streetaddress').value;
+            const city          = document.getElementById('city').value;
+            const state         = document.getElementById('state').value;
+            const zip           = document.getElementById('zip').value;
+
+            const user = {
+                name,
+                dob,
+                email,
+                username,
+                password,
+                phone,
+                streetaddress,
+                city,
+                state,
+                zip,
+            }
+
+            const url = 'http://localhost:2357/add';
+            superagent
+                .post(url)
+                .send(user)
+                .end(function(err,res){
+                    if(err){
+                        console.log(err);
+                    }
+                    else{
+                        console.log(res);
+                        if(res.statusCode === 200){
+                            document.getElementById('status').innerHTML = `
+                                <b>Response: Status Code 200.</b> The HTTP 200 OK success status response code indicates that the HTTP request has succeeded.<br>
+                                User: ${name}<br>
+                                ${new Date()}
+                            `;
+                        }
+                    }
+                });
+            window.location.reload();
+        }
+
+    </script>
+</body>
+</html>

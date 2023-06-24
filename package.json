@@ -1,0 +1,24 @@
+{
+  "name": "deploying-app-activity",
+  "version": "1.0.0",
+  "description": "first server app deployment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "babel ./public/data.js -d dist",
+    "dev": "nodemon server.js"
+  },
+  "author": "Timothy Huneck",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "faker": "^6.6.6",
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
