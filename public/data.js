@@ -5,7 +5,7 @@ function Data() {
 
     const  [dataMap, setDataMap] = React.useState([]);
     var dataArr = [];
-    var url = 'http://localhost:2357/data';
+    var url = '/data';
 
 
     React.useEffect(() => {

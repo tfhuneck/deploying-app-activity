@@ -1,3 +1,121 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "Jerad Sporer",
+      "dob": "1958-10-13",
+      "email": "Jerad_Sporer31@yahoo.com",
+      "username": "Jerad.Sporer",
+      "password": "JlBIgisMDwfbj9G",
+      "phone": "711-565-0843",
+      "streetaddress": "592 Wunsch Skyway",
+      "city": "Wadeborough",
+      "state": "ND",
+      "zip": "68129-2534",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/405.jpg"
+    },
+    {
+      "name": "Myrna Barton",
+      "dob": "1958-2-15",
+      "email": "Myrna_Barton69@yahoo.com",
+      "username": "Myrna_Barton27",
+      "password": "gVXFrRFgyUx9ZhS",
+      "phone": "517.244.6109 x841",
+      "streetaddress": "8561 Angela Divide",
+      "city": "Lake Dahlia",
+      "state": "SC",
+      "zip": "57798",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/413.jpg"
+    },
+    {
+      "name": "Grace Kshlerin Sr.",
+      "dob": "1979-11-10",
+      "email": "Grace_Kshlerin@gmail.com",
+      "username": "Grace38",
+      "password": "TGGiJ_jhIXTDluW",
+      "phone": "(850) 449-0270 x67902",
+      "streetaddress": "7354 Wisoky Path",
+      "city": "Mekhiland",
+      "state": "NV",
+      "zip": "54354-8098",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/515.jpg"
+    },
+    {
+      "name": "Bernhard Runolfsdottir PhD",
+      "dob": "1961-10-28",
+      "email": "Bernhard54@yahoo.com",
+      "username": "Bernhard.Runolfsdottir",
+      "password": "OQHdqNyWQGAD1Ft",
+      "phone": "(744) 161-5538",
+      "streetaddress": "74526 Micheal Harbors",
+      "city": "Andersonside",
+      "state": "CT",
+      "zip": "38853",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/78.jpg"
+    },
+    {
+      "name": "Gay Hessel",
+      "dob": "1963-3-27",
+      "email": "Gay.Hessel@yahoo.com",
+      "username": "Gay7",
+      "password": "BO_NhWSRbtenBcn",
+      "phone": "466.420.0919 x33590",
+      "streetaddress": "642 Lang Inlet",
+      "city": "South Stefanmouth",
+      "state": "AL",
+      "zip": "14533",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1153.jpg"
+    },
+    {
+      "name": "Miller O'Keefe",
+      "dob": "1970-12-9",
+      "email": "Miller.OKeefe@hotmail.com",
+      "username": "Miller_OKeefe24",
+      "password": "D_whiAKSrfNDTQi",
+      "phone": "858-611-7884",
+      "streetaddress": "51750 Tristin Parkways",
+      "city": "Lindberg",
+      "state": "MI",
+      "zip": "54967",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/850.jpg"
+    },
+    {
+      "name": "Charity Kreiger",
+      "dob": "1989-12-30",
+      "email": "Charity_Kreiger35@yahoo.com",
+      "username": "Charity.Kreiger95",
+      "password": "heNGpeL45AwgUUv",
+      "phone": "889-270-0452 x695",
+      "streetaddress": "11128 Emmet Stream",
+      "city": "West Braulio",
+      "state": "UT",
+      "zip": "43132",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/203.jpg"
+    },
+    {
+      "name": "Lorenza Crist",
+      "dob": "1960-1-14",
+      "email": "Lorenza83@gmail.com",
+      "username": "Lorenza.Crist",
+      "password": "6GPbnTGCrq0HW1v",
+      "phone": "1-983-839-5430",
+      "streetaddress": "516 Lafayette Canyon",
+      "city": "Esperanzaside",
+      "state": "MT",
+      "zip": "17475-2946",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1092.jpg"
+    },
+    {
+      "name": "Laurie Johnson DVM",
+      "dob": "1974-4-11",
+      "email": "Laurie.Johnson30@gmail.com",
+      "username": "Laurie_Johnson93",
+      "password": "JTr0sN8m9Z759jZ",
+      "phone": "384-688-3994 x96326",
+      "streetaddress": "01118 Kunze Island",
+      "city": "West Antwanshire",
+      "state": "ME",
+      "zip": "96436-8655",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/357.jpg"
+    }
+  ]
 }
