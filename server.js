@@ -7,7 +7,7 @@ const adapter   = new fs('database.json');
 const db        = low(adapter);
 const cors      = require('cors');
 const { faker } = require('@faker-js/faker');
-const port      = process.env.PORT || 2357;
+const port      = process.env.PORT || 8080;
 
 //  cors = cross-origin resource sharing 
 app.use(cors());
